@@ -1,3 +1,7 @@
+spring:
+  cloud:
+    config:
+      allowOverride: true #本地文件覆盖远程文件
 user:
   profile: test
 eureka:
