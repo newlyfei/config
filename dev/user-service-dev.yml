@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: utf-8
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://10.0.0.200:8761/eureka/,http://10.0.0.200:8762/eureka/,http://10.0.0.200:8763/eureka/
+  instance:
+    prefer-ip-address: true #将IP注册到EurekaServer，默认false注册hostname
