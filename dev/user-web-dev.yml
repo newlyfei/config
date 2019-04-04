@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      allowOverride: true #本地文件覆盖远程文件
+      overrideNone: true #为true时本地配置优先级高，包括系统环境变量、本地配置文件
+user:
+  profile: test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://10.0.0.200:8761/eureka/,http://10.0.0.200:8762/eureka/,http://10.0.0.200:8763/eureka/
+  instance:
+    prefer-ip-address: true #将IP注册到EurekaServer，默认false注册hostname
